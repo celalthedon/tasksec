@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeNotes (Secured) - Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Dashboard <span class="small">(Secured Frontend Demo)</span></h1>
+        <p>Welcome, <strong id="currentUser"></strong>.</p>
+        <p class="small">Demo role display: <strong id="currentRole"></strong> (not real authorization)</p>
+        <p class="info">
+          This app is frontend-only. Real access control must be implemented and enforced on a backend server.
+        </p>
+        <div class="nav-links">
+          <a id="profileLink" href="profile.html?id=2">Go to Profile</a>
+          <a href="admin.html">Open Admin Info Page</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Notes</h2>
+        <p class="small">Notes are locally stored for demo purposes and safely rendered as text.</p>
+        <form id="noteForm">
+          <label for="noteInput">Add a note</label>
+          <textarea id="noteInput" maxlength="240" placeholder="Write 1-240 characters..."></textarea>
+          <div style="margin-top: 0.8rem" class="actions">
+            <button type="submit">Save Note</button>
+            <button type="button" id="logoutBtn">Logout</button>
+          </div>
+          <p id="noteFeedback" class="small"></p>
+        </form>
+        <div id="notesList" style="margin-top: 1rem"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

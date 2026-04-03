@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeNotes (Vulnerable) - Admin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Admin Panel <span class="small">(Vulnerable)</span></h1>
+        <p class="warning">This page pretends to be restricted and depends only on localStorage role checks.</p>
+        <h3>Fake restricted data</h3>
+        <ul>
+          <li>System health: OK</li>
+          <li>Registered users: 2</li>
+          <li>Latest audit status: Pending review</li>
+        </ul>
+        <div class="nav-links">
+          <a href="dashboard.html">Back to Dashboard</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

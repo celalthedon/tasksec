@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeNotes (Vulnerable) - Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Dashboard <span class="small">(Vulnerable)</span></h1>
+        <p>Welcome, <strong id="currentUser"></strong>.</p>
+        <p>Your role: <strong id="currentRole"></strong></p>
+        <div class="nav-links">
+          <a id="profileLink" href="profile.html?id=1">Go to Profile</a>
+          <a href="admin.html">Go to Admin Page</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Notes</h2>
+        <p class="small">Notes are saved in your browser localStorage.</p>
+        <form id="noteForm">
+          <label for="noteInput">Add a note</label>
+          <textarea id="noteInput" placeholder="Write a note..."></textarea>
+          <div style="margin-top: 0.8rem" class="actions">
+            <button type="submit">Save Note</button>
+            <button type="button" id="logoutBtn">Logout</button>
+          </div>
+        </form>
+        <div id="notesList" style="margin-top: 1rem"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeNotes (Vulnerable) - Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>SafeNotes <span class="small">(Vulnerable Demo)</span></h1>
+        <p class="small">Login with a demo account to continue.</p>
+        <form id="loginForm">
+          <div>
+            <label for="username">Username</label>
+            <input id="username" name="username" placeholder="admin or alice" required />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Enter password" required />
+          </div>
+          <div style="margin-top: 0.8rem">
+            <button type="submit">Login</button>
+          </div>
+          <p id="loginError" class="error"></p>
+        </form>
+        <p class="small">Demo credentials: admin/admin123 or alice/alice123</p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
