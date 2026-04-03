@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeNotes (Vulnerable) - Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Profile <span class="small">(Vulnerable)</span></h1>
+        <p class="small">This page loads by URL parameter, e.g. profile.html?id=1</p>
+        <div id="profileData"></div>
+        <div class="nav-links" style="margin-top: 1rem">
+          <a href="dashboard.html">Back to Dashboard</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
